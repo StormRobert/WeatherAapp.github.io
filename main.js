@@ -10,25 +10,25 @@ async function checkWeather(city){
 
     console.log(data);
 
-    // document.querySelector('.city').innerHTML = data.name;
-    // document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°c";
-    // document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
-    // document.querySelector('.wind').innerHTML = data.wind.speed + " km/h";
+    document.querySelector('.city').innerHTML = data.name;
+    document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°c";
+    document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
+    document.querySelector('.wind').innerHTML = data.wind.speed + " km/h";
 
-    // if(data.weather[0].main == "Rain"){
-    //     weatherIcon.src = "rain.jpeg";
-    // }
-    // else if (data.weather[0].main == "Drizzle"){
-    //     weatherIcon.src = "drizzle.png"
-    // }
-    // else if (data.weather[0].main == "Clouds"){
-    //     weatherIcon.src = "cloudy.png"
-    // }
-    // else if (data.weather[0].main == "Clear"){
-    //     weatherIcon.src = "sunny.jpeg"
-    // }
+    if(data.weather[0].main == "Rain"){
+        weatherIcon.src = "rain.jpeg";
+    }
+    else if (data.weather[0].main == "Drizzle"){
+        weatherIcon.src = "drizzle.png"
+    }
+    else if (data.weather[0].main == "Clouds"){
+        weatherIcon.src = "cloudy.png"
+    }
+    else if (data.weather[0].main == "Clear"){
+        weatherIcon.src = "sunny.jpeg"
+    }
 
-    // document.querySelector(".current-weather").style.display = 'block'
+    document.querySelector(".current-weather").style.display = 'block'
 
      
 
