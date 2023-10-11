@@ -4,12 +4,18 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&=&units=metric&
 const search = document.querySelector('.search input')
 const searchButton = document.querySelector('.search button')
 const weatherIcon = document.querySelector('.weather-icon')
+
+// function to get the city with its own weather 
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    {
+        method: "GET"
+        contentType: "application/json"
+    }
     var data = await response.json();
 
     console.log(data);
-  
+  // getting the needed elements
     document.querySelector('.city').innerHTML = data.name;
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°c";
     document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
@@ -30,13 +36,28 @@ async function checkWeather(city){
 
     document.querySelector(".current-weather").style.display = 'block'
 
-     
+    function toggleDetails() {
+        const details = document.querySelector('.details');
+        if (details.style.display === 'none') {
+          details.style.display = 'block';
+        } else {
+          details.style.display = 'none';
+        }
+      }
+      
+      // Add a click event listener to the button
+      const toggleButton = document.getElementById('toggle-details');
+      toggleButton.addEventListener('click', toggleDetails);
+      
 
 }
 //click eventListener
 searchButton.addEventListener('click', ()=> {
     checkWeather(search.value)
 })
-checkWeather();
 
+//checkWeather();
+document.addEventListener('DOMContentLoaded', () => {
+    checkWeather();
+});
 

@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body,
@@ -97,6 +98,7 @@ button{
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
+    
 }
 
 .column {
@@ -111,12 +113,24 @@ button{
 
 }
 
+
+
 .humidity, .wind{
     font-size: 28px;
-    margin-top: -6;
+    margin-top: -6px;
 }
 
 
 .current-weather{
     display: none;
 }
+
+#toggle-details {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
