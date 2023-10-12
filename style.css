@@ -27,6 +27,15 @@ button{
   font-family: "Poppins", sans-serif;
 }
 
+h1{
+    font-size: 80px;
+    text-align: center; /* Center the text horizontally */
+  margin: 0; /* Remove the top margin to bring it to the top */
+  background:linear-gradient(135deg, #1db99f, #581a70b9), #333;
+  color: #fff; /* Text color */
+  padding: 10px;
+}
+
 .card {
     width: 90%;
     max-width: 500px;
@@ -34,7 +43,7 @@ button{
     border-radius: 20px;
     text-align: center;
     padding: 40px 30px;
-    background:linear-gradient(135deg, #1db99f, #581a70b9), #333;
+    background:linear-gradient(220deg, #1db99f, #581a70b9), #333;
     color: var(--light-four)
 
 }
@@ -80,12 +89,12 @@ button{
     width: 140px;
 }
 
-.weather h1{
+.weather h2{
     font-size: 80px;
     font-weight: 500; 
 }
 
-.weather h2{
+.weather h3{
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
@@ -93,28 +102,29 @@ button{
 }
 
 .details{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     
 }
 /* styling the toggle button */
-#toggle-details {
-    background-color: #007bffb6;
+.toggle-button {
+    background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
-
-    &:hover {
-        background-color:#4b0e63b9; /* Change the background color on hover */
-      }
+    margin-top: 10px;
   }
+
+    /* Add a hover effect */
+.toggle-button:hover {
+    background-color: #8900b3;
+  }
+  
 
 .column {
     display:flex;
@@ -136,7 +146,7 @@ button{
 }
 
 
-.current-weather{
-    display: none;
-}
+.current-weather.show-details .details {
+    display: block;
+  }
 

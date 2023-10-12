@@ -37,12 +37,8 @@ async function checkWeather(city){
     document.querySelector(".current-weather").style.display = 'block'
 
     function toggleDetails() {
-        const details = document.querySelector('.details');
-        if (details.style.display === 'none') {
-          details.style.display = 'block';
-        } else {
-          details.style.display = 'none';
-        }
+        const currentWeather = document.querySelector('.current-weather');
+        currentWeather.classList.toggle('show-details');
       }
       
       // Add a click event listener to the button
