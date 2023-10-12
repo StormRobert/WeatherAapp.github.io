@@ -100,6 +100,21 @@ button{
     margin-top: 50px;
     
 }
+/* styling the toggle button */
+#toggle-details {
+    background-color: #007bffb6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color:#4b0e63b9; /* Change the background color on hover */
+      }
+  }
 
 .column {
     display:flex;
@@ -125,12 +140,3 @@ button{
     display: none;
 }
 
-#toggle-details {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
