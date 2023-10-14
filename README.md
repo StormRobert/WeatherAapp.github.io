@@ -19,4 +19,4 @@ User-friendly. Intuitive interface for all users
 
 Real-time Data. Instant updates with data retrieved from a reliable source.
 
-URL: https://stormrobert.github.io/WeatherAapp.github.io/![Screenshot from 2023-10-14 12-37-30]
+URL: https://stormrobert.github.io/WeatherAapp.github.io/
